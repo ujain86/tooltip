@@ -1,12 +1,12 @@
 function Tooltip(props) {
     
-    var position = props.position;
-    console.log(position);
+  var position = props.position;
+  
   return (
 
      <div className="body">
       
-         <div className="tooltip" style={{top: -200}} >
+         <div className="tooltip" style={{[position]: -200}} >
              Thanks for hovering! I'm a tooltip
          </div>
     
@@ -14,19 +14,6 @@ function Tooltip(props) {
       
   );
 }
-
-
-// import React, { Component } from "react";
-
-// class Tooltip extends Component {
-//   render() {
-//     return (
-//       <div className="body">
-//         <div className="tooltip">Thanks for hovering! I'm a tooltip</div>
-//       </div>
-//     );
-//   }
-// }
 
 export default Tooltip;
 
