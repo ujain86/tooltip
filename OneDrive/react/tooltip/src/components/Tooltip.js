@@ -1,5 +1,6 @@
 function Tooltip(props) {
     
+  //Collecting position prop
   var position = props.position;
   
   return (

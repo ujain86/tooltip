@@ -4,6 +4,7 @@ import Tooltip from './Tooltip';
 
 function App() {
 
+//Using useState hook to handle hover events by toggling variable 'isHovering'
 
     const [isHovering, setIsHovering] = useState(false);
 
@@ -15,7 +16,7 @@ function App() {
       setIsHovering(false);
     };
 
-    const position = 'top';
+    const position = 'right';
 
   return (
     <div className="body">
@@ -24,6 +25,7 @@ function App() {
         Hover over me! 
       </div>
       
+      //if 'isHovering' is true Tooltip pcomponent will render
       { isHovering && 
         <Tooltip position={position}/>
       }
